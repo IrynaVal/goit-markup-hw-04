@@ -138,6 +138,10 @@ button {
 }
 
 .contacts-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
     color: var(--main-text-color);
     font-family: var(--main-font-family);
     font-weight: 500;
@@ -152,9 +156,11 @@ button {
     color: var(--accent-color)
 }
 
-.envelope-icon {
-    fill: none;
-    stroke: var(--main-text-color);
+.contacts-icon {
+    fill: currentColor;
+    /* fill: var(--main-text-color); */
+    /* stroke: var(--main-text-color); */
+
 }
 
 /* Секція Герой */
@@ -337,7 +343,7 @@ button {
     gap: 10px;
 }
 
-.socials-item {
+.socials-link {
     display: flex;
     width: 44px;
     height: 44px;
@@ -345,25 +351,17 @@ button {
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    /* color: var(--icons-color); */
-    color: #FFFFFF;
+    color: var(--icons-color);
 }
 
-.socials-link {
+.socials-link:hover,
+.socials-link:focus {
     color: #FFFFFF;
-}
-
-.socials-item:hover,
-.socials-item:focus {
-    /* color: #FFFFFF; */
     background-color: var(--accent-color);
-    /* stroke: var(--main-background-color); */
-
 }
 
 .socials-icon {
     fill: currentColor;
-
 }
 
 /* Клієнти */
@@ -453,6 +451,23 @@ button {
     font-weight: 700;
 }
 
+.footer-socials {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-socials .socials-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--main-background-color);
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    background-color: var(--accent-color);
+}
+
 /* Наші проєкти */
 
 .btn-filter {
@@ -533,25 +548,4 @@ button {
 .projects-item:hover,
 .projects-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.footer-socials {
-    /* .socials-list { */
-    display: flex;
-    padding: 0;
-    justify-content: center;
-    gap: 10px;
-}
-
-.footer-socials .socials-item {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.icon-use {
-    fill: #FFFFFF;
-}
-
-.socials-item:hover,
-.socials-item:focus {
-    background-color: var(--accent-color);
 }
