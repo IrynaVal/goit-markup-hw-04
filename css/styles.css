@@ -158,9 +158,6 @@ button {
 
 .contacts-icon {
     fill: currentColor;
-    /* fill: var(--main-text-color); */
-    /* stroke: var(--main-text-color); */
-
 }
 
 /* Секція Герой */
@@ -186,7 +183,7 @@ button {
     margin-right: auto;
     margin-bottom: 30px;
 
-    color: #FFFFFF;
+    color: var(--main-background-color);
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
@@ -213,7 +210,7 @@ button {
 }
 
 .btn:active {
-    background-color: #FFFFFF;
+    background-color: var(--main-background-color);
 }
 
 .btn:hover,
@@ -347,16 +344,16 @@ button {
     display: flex;
     width: 44px;
     height: 44px;
-    background-color: var(--main-background-color);
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+    background-color: var(--main-background-color);
     color: var(--icons-color);
 }
 
 .socials-link:hover,
 .socials-link:focus {
-    color: #FFFFFF;
+    color: var(--main-background-color);
     background-color: var(--accent-color);
 }
 
@@ -396,8 +393,11 @@ button {
 
 .footer-container {
     display: flex;
-    gap: 70px;
     align-items: baseline;
+}
+
+.footer-contacts {
+    margin-right: 70px;
 }
 
 .logo.logo-footer {
@@ -407,7 +407,7 @@ button {
 }
 
 .logo-white {
-    color: #FFFFFF;
+    color: var(--main-background-color);
 }
 
 .address {
@@ -429,7 +429,7 @@ button {
 }
 
 .city-link {
-    color: #FFFFFF;
+    color: var(--main-background-color);
 }
 
 .address-link {
@@ -438,13 +438,13 @@ button {
 
 .address-link:hover,
 .address-link:focus {
-    color: #FFFFFF;
+    color: var(--main-background-color);
 }
 
 .join {
     margin-bottom: 20px;
 
-    color: #FFFFFF;
+    color: var(--main-background-color);
     line-height: calc(16 / 14);
     text-transform: uppercase;
     font-size: 14px;
@@ -463,8 +463,8 @@ button {
     color: var(--main-background-color);
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.footer-socials .socials-link:hover,
+.footer-socials .socials-link:focus {
     background-color: var(--accent-color);
 }
 
@@ -489,14 +489,14 @@ button {
 
 .btn-filter.current {
     background-color: var(--accent-color);
-    color: #FFFFFF;
+    color: var(--main-background-color);
 }
 
 .btn-filter:active,
 .btn-filter:hover,
 .btn-filter:focus {
     background-color: var(--accent-color);
-    color: #FFFFFF;
+    color: var(--main-background-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -541,11 +541,12 @@ button {
 }
 
 .projects-link {
+    display: block;
     text-decoration: none;
     color: var(--main-text-color);
 }
 
-.projects-item:hover,
-.projects-item:focus {
+.projects-link:hover,
+.projects-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
